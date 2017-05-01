@@ -14,7 +14,8 @@ const buildExportBlock = (files) => {
   let importBlock;
 
   importBlock = _.map(files, (fileName) => {
-    return 'export { default as ' + safeVariableName(fileName) + ' } from \'./' + fileName + '\';';
+    //return 'export { default as ' + safeVariableName(fileName) + ' } from \'./' + fileName + '\';';
+    return 'export * from \'./' + fileName + '\';';
   });
 
   importBlock = importBlock.join('\n');
