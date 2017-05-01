@@ -97,9 +97,9 @@ export default (directoryPath, options = {}) => {
       return false;
     }
 
-    if (hasMultipleExtensions(fileName)) {
-      return false;
-    }
+    //if (hasMultipleExtensions(fileName)) {
+    //  return false;
+    //}
 
     if (_.startsWith(fileName, 'index.js')) {
       return false;
